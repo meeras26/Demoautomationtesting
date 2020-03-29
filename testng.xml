@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Academy.listeners"/></listeners>
+  <test thread-count="10" name="Test">
+    <classes>
+      <class name="Academy.Login"/>
+      </classes>
+      </test>
+      <test name="Testregisteration">
+      <classes>
+      <class name="Academy.TC_registr_001"/>
+      </classes>
+      </test>
+      <test name="Testalert">
+      <classes>
+       <class name="Academy.TC_alert_001"/>
+       </classes>
+       </test>
+       <test name="Testframes">
+       <classes>
+      <class name="Academy.TC_Frames_001"/>
+      </classes></test>
+       <test name="Testwid">
+       <classes>
+      <class name="Academy.TC_Widgets_001"/>
+      </classes></test>
+      <!-- Test -->
+</suite> <!-- Suite -->
