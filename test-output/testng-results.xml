@@ -2,80 +2,80 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-27T18:43:02 IST" name="Suite" finished-at="2020-02-27T18:44:32 IST" duration-ms="90159">
+  <suite started-at="2020-03-29T13:28:41 IST" name="Suite" finished-at="2020-03-29T13:32:32 IST" duration-ms="231030">
     <groups>
     </groups>
-    <test started-at="2020-02-27T18:43:02 IST" name="Test" finished-at="2020-02-27T18:43:27 IST" duration-ms="25516">
+    <test started-at="2020-03-29T13:28:41 IST" name="Test" finished-at="2020-03-29T13:30:54 IST" duration-ms="132413">
       <class name="Academy.Login">
-        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.Login@3541cb24]" started-at="2020-02-27T18:43:02 IST" name="initalise" finished-at="2020-02-27T18:43:14 IST" duration-ms="12079" status="PASS">
+        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.Login@3541cb24]" started-at="2020-03-29T13:28:41 IST" name="initalise" finished-at="2020-03-29T13:28:54 IST" duration-ms="12575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initalise -->
-        <test-method signature="basepagenavigation()[pri:0, instance:Academy.Login@3541cb24]" started-at="2020-02-27T18:43:14 IST" name="basepagenavigation" finished-at="2020-02-27T18:43:25 IST" duration-ms="11489" status="PASS">
+        <test-method signature="basepagenavigation()[pri:0, instance:Academy.Login@3541cb24]" started-at="2020-03-29T13:28:54 IST" name="basepagenavigation" finished-at="2020-03-29T13:30:52 IST" duration-ms="117673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepagenavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.Login@3541cb24]" started-at="2020-02-27T18:43:25 IST" name="teardown" finished-at="2020-02-27T18:43:27 IST" duration-ms="1666" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.Login@3541cb24]" started-at="2020-03-29T13:30:52 IST" name="teardown" finished-at="2020-03-29T13:30:54 IST" duration-ms="2114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Academy.Login -->
     </test> <!-- Test -->
-    <test started-at="2020-02-27T18:43:27 IST" name="Testregisteration" finished-at="2020-02-27T18:43:45 IST" duration-ms="17801">
+    <test started-at="2020-03-29T13:30:54 IST" name="Testregisteration" finished-at="2020-03-29T13:31:23 IST" duration-ms="28902">
       <class name="Academy.TC_registr_001">
-        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_registr_001@2e55dd0c]" started-at="2020-02-27T18:43:27 IST" name="initalise" finished-at="2020-02-27T18:43:32 IST" duration-ms="4426" status="PASS">
+        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_registr_001@2e55dd0c]" started-at="2020-03-29T13:30:54 IST" name="initalise" finished-at="2020-03-29T13:31:03 IST" duration-ms="9059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initalise -->
-        <test-method signature="validateregistration()[pri:0, instance:Academy.TC_registr_001@2e55dd0c]" started-at="2020-02-27T18:43:32 IST" name="validateregistration" finished-at="2020-02-27T18:43:44 IST" duration-ms="11888" status="PASS">
+        <test-method signature="validateregistration()[pri:0, instance:Academy.TC_registr_001@2e55dd0c]" started-at="2020-03-29T13:31:03 IST" name="validateregistration" finished-at="2020-03-29T13:31:18 IST" duration-ms="15455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateregistration -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_registr_001@2e55dd0c]" started-at="2020-02-27T18:43:44 IST" name="teardown" finished-at="2020-02-27T18:43:45 IST" duration-ms="1474" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_registr_001@2e55dd0c]" started-at="2020-03-29T13:31:18 IST" name="teardown" finished-at="2020-03-29T13:31:23 IST" duration-ms="4379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Academy.TC_registr_001 -->
     </test> <!-- Testregisteration -->
-    <test started-at="2020-02-27T18:43:45 IST" name="Testalert" finished-at="2020-02-27T18:44:08 IST" duration-ms="23310">
+    <test started-at="2020-03-29T13:31:23 IST" name="Testalert" finished-at="2020-03-29T13:32:03 IST" duration-ms="40030">
       <class name="Academy.TC_alert_001">
-        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_alert_001@1eb5174b]" started-at="2020-02-27T18:43:45 IST" name="initalise" finished-at="2020-02-27T18:43:50 IST" duration-ms="4450" status="PASS">
+        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_alert_001@1eb5174b]" started-at="2020-03-29T13:31:23 IST" name="initalise" finished-at="2020-03-29T13:31:34 IST" duration-ms="11362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initalise -->
-        <test-method signature="checkingalertbtn()[pri:0, instance:Academy.TC_alert_001@1eb5174b]" started-at="2020-02-27T18:43:50 IST" name="checkingalertbtn" finished-at="2020-02-27T18:44:07 IST" duration-ms="17173" status="PASS">
+        <test-method signature="checkingalertbtn()[pri:0, instance:Academy.TC_alert_001@1eb5174b]" started-at="2020-03-29T13:31:34 IST" name="checkingalertbtn" finished-at="2020-03-29T13:31:55 IST" duration-ms="20600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingalertbtn -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_alert_001@1eb5174b]" started-at="2020-02-27T18:44:07 IST" name="teardown" finished-at="2020-02-27T18:44:08 IST" duration-ms="1675" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_alert_001@1eb5174b]" started-at="2020-03-29T13:31:55 IST" name="teardown" finished-at="2020-03-29T13:32:03 IST" duration-ms="8054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Academy.TC_alert_001 -->
     </test> <!-- Testalert -->
-    <test started-at="2020-02-27T18:44:08 IST" name="Testframes" finished-at="2020-02-27T18:44:25 IST" duration-ms="16805">
+    <test started-at="2020-03-29T13:32:03 IST" name="Testframes" finished-at="2020-03-29T13:32:26 IST" duration-ms="23628">
       <class name="Academy.TC_Frames_001">
-        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_Frames_001@29e495ff]" started-at="2020-02-27T18:44:08 IST" name="initalise" finished-at="2020-02-27T18:44:13 IST" duration-ms="4486" status="PASS">
+        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_Frames_001@29e495ff]" started-at="2020-03-29T13:32:03 IST" name="initalise" finished-at="2020-03-29T13:32:10 IST" duration-ms="6942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initalise -->
-        <test-method signature="framechecking()[pri:0, instance:Academy.TC_Frames_001@29e495ff]" started-at="2020-02-27T18:44:13 IST" name="framechecking" finished-at="2020-02-27T18:44:24 IST" duration-ms="10733" status="PASS">
+        <test-method signature="framechecking()[pri:0, instance:Academy.TC_Frames_001@29e495ff]" started-at="2020-03-29T13:32:10 IST" name="framechecking" finished-at="2020-03-29T13:32:22 IST" duration-ms="12770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- framechecking -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_Frames_001@29e495ff]" started-at="2020-02-27T18:44:24 IST" name="teardown" finished-at="2020-02-27T18:44:25 IST" duration-ms="1582" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_Frames_001@29e495ff]" started-at="2020-03-29T13:32:22 IST" name="teardown" finished-at="2020-03-29T13:32:26 IST" duration-ms="3910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Academy.TC_Frames_001 -->
     </test> <!-- Testframes -->
-    <test started-at="2020-02-27T18:44:25 IST" name="Testwid" finished-at="2020-02-27T18:44:32 IST" duration-ms="6474">
+    <test started-at="2020-03-29T13:32:26 IST" name="Testwid" finished-at="2020-03-29T13:32:32 IST" duration-ms="5955">
       <class name="Academy.TC_Widgets_001">
-        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_Widgets_001@41fecb8b]" started-at="2020-02-27T18:44:25 IST" name="initalise" finished-at="2020-02-27T18:44:30 IST" duration-ms="4452" status="PASS">
+        <test-method is-config="true" signature="initalise()[pri:0, instance:Academy.TC_Widgets_001@41fecb8b]" started-at="2020-03-29T13:32:26 IST" name="initalise" finished-at="2020-03-29T13:32:30 IST" duration-ms="3936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initalise -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_Widgets_001@41fecb8b]" started-at="2020-02-27T18:44:30 IST" name="teardown" finished-at="2020-02-27T18:44:32 IST" duration-ms="2022" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.TC_Widgets_001@41fecb8b]" started-at="2020-03-29T13:32:30 IST" name="teardown" finished-at="2020-03-29T13:32:32 IST" duration-ms="2017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

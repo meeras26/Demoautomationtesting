@@ -15,6 +15,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import Pageobjects.HomePage;
+
 import org.apache.commons.io.FileUtils;
 
 
@@ -44,6 +47,14 @@ public class base {
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          return driver;
 		
+	 }
+	 public void getlogin()
+	 {
+		 driver.get(prop.getProperty("url"));
+			
+	       HomePage hp=new HomePage(driver);
+	       hp.getEmail().sendKeys("testing4hobby@gmail.com");
+	       hp.getEnterbtn().click();
 	 }
 	public void getScreenshot(String result) throws IOException
 	{

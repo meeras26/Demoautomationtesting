@@ -26,10 +26,10 @@ public class TC_alert_001 extends base
 	public void checkingalertbtn() throws IOException, InterruptedException
 	{
 
-		driver.get(prop.getProperty("url"));
+		//driver.get(prop.getProperty("url"));
         HomePage hp=new HomePage(driver);
-	    hp.getEmail().sendKeys("testing4hobby@gmail.com");
-	    hp.getEnterbtn().click();
+//	    hp.getEmail().sendKeys("testing4hobby@gmail.com");
+//	    hp.getEnterbtn().click();
 		SwitchtoPage sp=new SwitchtoPage(driver);
 		sp.getswitchtolink().click();
 		sp.getAlertlink().click();
