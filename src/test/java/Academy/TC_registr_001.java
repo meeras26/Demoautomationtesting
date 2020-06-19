@@ -1,4 +1,11 @@
 package Academy;
+/*Scenario
+ 1.Open the browser enter the url,login page should be displayed.
+ 2.Enter the login details and click on ok,Home page should be displayed.
+ 3.Clck on registration link,Registration page should be displayed.
+ 4.Enter the registration  details and click on ok.
+ 5.Close the browser.
+ */
 
 import java.io.IOException;
 
@@ -24,10 +31,7 @@ public class TC_registr_001 extends base
 	@Test
 	public void validateregistration() throws IOException
 	{
-	driver.get(prop.getProperty("url"));
-    HomePage hp=new HomePage(driver);
-    hp.getEmail().sendKeys("testing4hobby@gmail.com");
-    hp.getEnterbtn().click();
+	getlogin();
 	RegisterPage rp=new RegisterPage(driver);
 //	WebElement h=rp.getheading();
 //    String hd=h.getText();
@@ -39,8 +43,6 @@ public class TC_registr_001 extends base
 	rp.getPhone().sendKeys("9089889080");
 	rp.getRadiobtn().click();
 	rp.getCheckbox().click();
-//	rp.getLanguage().sendKeys("hjsjsgjshj");
-//	rp.getSkills().click();
 	rp.getselectedoptn().selectByValue("Adobe InDesign");
 	rp.getCountry().selectByVisibleText("Afghanistan");
 	rp.getselctctry().click();
@@ -49,10 +51,7 @@ public class TC_registr_001 extends base
 	rp.getdobd().selectByValue("3");
 	rp.getFpassword().sendKeys("abcdef123");
 	rp.getConpassword().sendKeys("abcdef123");
-//	Thread.sleep(3000);
-//	Runtime.getRuntime().exec("C:\\Users\\user\\Downloads\\fileupload.exe");
-//	System.out.println(rp.getPhoto());
-	rp.getPhoto().sendKeys("C:\\Users\\user\\Pictures\\dsc085421.jpg");
+    rp.getPhoto().sendKeys("C:\\Users\\Public\\Pictures\\Sample Pictures\\Hydrangeas.jpg");
 	rp.getSubmit().click();
 	}
 	@AfterTest
@@ -60,5 +59,6 @@ public class TC_registr_001 extends base
 	{
 		driver.close();
 	}
+	
 
 }

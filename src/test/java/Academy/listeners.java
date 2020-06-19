@@ -14,7 +14,7 @@ base b=new base();
     @Override		
     public void onFinish(ITestContext arg0) {					
         // TODO Auto-generated method stub				
-        System.out.println("done the testing");		
+//        System.out.println("done the testing");		
     }		
 
     @Override		
@@ -40,7 +40,12 @@ base b=new base();
 		}
     }
         // TODO Auto-generated method stub				
-        		
+    // When Test case get passed, this method is called.		
+    @Override		
+    public void onTestSuccess(ITestResult result)					
+    {		
+    System.out.println("The name of the testcase passed is :"+result.getName());					
+    }			
     		
 
     @Override		
@@ -55,10 +60,5 @@ base b=new base();
         		
     }		
 
-    @Override		
-    public void onTestSuccess(ITestResult arg0) {					
-        // TODO Auto-generated method stub				
-        
-
-}
+   
 }

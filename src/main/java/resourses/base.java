@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import java.io.File;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.OutputType;
@@ -28,7 +26,7 @@ public class base {
 	 public WebDriver initialiseDriver() throws IOException
 	 {
 		 prop= new  Properties();
-		 FileInputStream fis= new FileInputStream("C:\\Users\\user\\Demoautomationtesting\\src\\main\\java\\resourses\\data.Properties");
+		 FileInputStream fis= new FileInputStream("D:\\Gitproject\\Demoautomationtesting\\src\\main\\java\\resourses\\data.Properties");
 		 prop.load(fis);
 		 String Browsername=prop.getProperty("browser");
 		 if(Browsername.equals("chrome"))
@@ -39,12 +37,12 @@ public class base {
 		 }
 		 else if(Browsername.equals("firefox"))
 		 {
-			 System.setProperty("webdriver.gecko.driver","F:\\\\mygitfolder\\\\geckodriver.exe"); 
+			 System.setProperty("webdriver.gecko.driver","D:\\Drivers\\geckodriver.exe"); 
 			 driver=new FirefoxDriver();
 		 }
 		 
 		
-		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
          return driver;
 		
 	 }

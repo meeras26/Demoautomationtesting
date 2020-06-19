@@ -30,17 +30,17 @@ public class SwitchtoPage
         	return driver.findElement( alertlink);
 			
 		}
-		public WebElement getbtn()
+		public WebElement getalertwithoklink()
 		{
 			return driver.findElement(clikredbtn);
 			
 		}
-		public WebElement getok()
+		public WebElement getalertwithokandcancel()
 		{
 			return driver.findElement(okandcancel);
 			
 		}
-		public WebElement getOkCancel()
+		public WebElement clickbtntodisplayconfirmbox()
 		{
 			return driver.findElement(dispalybox);
 		}

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class RegisterPage 
 {  
-	 public WebDriver driver;
+	public WebDriver driver;
 	public RegisterPage (WebDriver driver2)
 	 {
 		// TODO Auto-generated constructor stub
@@ -22,8 +22,6 @@ public class RegisterPage
 		By phone=By.cssSelector("input[ng-model='Phone']");
 		By radiobtn=By.cssSelector("input[value='Male']");
 		By checkbx=By.id("checkbox1");
-//		By language=By.id("msdd");
-//		By lngu=By.cssSelector("div[id='msdd']");
 		By skills=By.id("Skills");
 		By country=By.id("countries");
 		By setcountry=By.cssSelector("span[class='select2-selection select2-selection--single']");
@@ -69,11 +67,6 @@ public class RegisterPage
 		{
 			return driver.findElement(checkbx);
 		}
-//		public WebElement getLanguage()
-//		{
-//			return driver.findElement(lngu);
-//		}
-//	 
 		public Select getselectedoptn()
 		{
 			Select sel =new Select(driver.findElement(skills));
@@ -120,8 +113,5 @@ public class RegisterPage
 		{
 			return driver.findElement(submit);
 		}
-		public WebElement getSkills()
-		{
-		   return driver.findElement(skills);
-		}
+		
 }

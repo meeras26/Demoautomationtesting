@@ -14,7 +14,7 @@ public class DatepickerPage
 		// TODO Auto-generated constructor stub
 		 this.driver=driver2;
 	 } 
-//	Date picker Disabled
+
 	By calnder=By.id("datepicker1");
 	By dates=By.cssSelector("td[data-handler='selectDay']");
 	By month=By.cssSelector("div[class='ui-datepicker-title']");
@@ -29,7 +29,7 @@ public class DatepickerPage
 		 {
 			 driver.findElement(btn).click();
 		 }
-//		 while(driver.findElement(month));
+
 	 }
 	 public void getDates()
 	 {
