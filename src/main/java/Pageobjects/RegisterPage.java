@@ -1,5 +1,7 @@
 package Pageobjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +26,7 @@ public class RegisterPage
 		By checkbx=By.id("checkbox1");
 		By skills=By.id("Skills");
 		By country=By.id("countries");
-		By setcountry=By.cssSelector("span[class='select2-selection select2-selection--single']");
+		By setcountry=By.id("select2-country-container");
 		By doby=By.id("yearbox");
 		By dobm=By.cssSelector("select[placeholder='Month']");
 		By dobd=By.id("daybox");
@@ -77,9 +79,17 @@ public class RegisterPage
 			Select sel =new Select(driver.findElement(country));
 			return sel;
 		}
-		public WebElement getselctctry()
+		public void getselctctry()
 		{
-			return driver.findElement(setcountry);
+			List<WebElement>contrys=driver.findElements(setcountry);
+			for(WebElement cutry:contrys)
+			{
+				if(cutry.getText().equals("India"))
+				{
+					cutry.click();
+					break;
+				}
+			}
 		} 
 		public Select getdoby()
 		{

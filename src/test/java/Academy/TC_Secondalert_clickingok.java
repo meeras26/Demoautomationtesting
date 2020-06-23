@@ -9,23 +9,24 @@
 */
 package Academy;
 import java.io.IOException;
-
 import org.openqa.selenium.Alert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import Pageobjects.SwitchtoPage;
 import resourses.base;
 
 public class TC_Secondalert_clickingok  extends base 
 {
-	@BeforeTest
+	/*Method for initialise driver.*/ 
+	@BeforeClass
 	public void initalise() throws IOException
 	{
 		driver=initialiseDriver();
-		
 	}
+    /* Method for click on second alert.and click on ok.in the alertbox*/
 	@Test
 	public void checking_secondalertbtn_withok() throws IOException, InterruptedException
 	{
@@ -39,8 +40,9 @@ public class TC_Secondalert_clickingok  extends base
 		al.accept();
 		
 	}
-	
-	@AfterTest
+    /*Method for close the browser*/
+    
+	@AfterClass
 	public void teardown()
 	{
 		driver.close();

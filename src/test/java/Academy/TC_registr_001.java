@@ -8,53 +8,52 @@ package Academy;
  */
 
 import java.io.IOException;
-
-import org.junit.Before;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import Pageobjects.HomePage;
 import Pageobjects.RegisterPage;
 import resourses.base;
 
 public class TC_registr_001 extends base
 {
-	@BeforeTest
+	/* Method for initializing driver */
+    @BeforeClass
 	public void initalise() throws IOException
 	{
 		driver=initialiseDriver();
-		
 	}
-	@Test
+    /*  Method used to send the values to the registration page. */
+    @Test
 	public void validateregistration() throws IOException
 	{
-	getlogin();
-	RegisterPage rp=new RegisterPage(driver);
-//	WebElement h=rp.getheading();
-//    String hd=h.getText();
-//	Assert.assertEquals(hd,"hgff");
-	rp.getFirestname().sendKeys("xyz");
-	rp.getLastname().sendKeys("ddsdd");
-	rp.getAddress().sendKeys("hjkhf fjhkfh kfjahkjfha");
-	rp.getemail().sendKeys("testing4hobby@gmail.com");
-	rp.getPhone().sendKeys("9089889080");
-	rp.getRadiobtn().click();
-	rp.getCheckbox().click();
-	rp.getselectedoptn().selectByValue("Adobe InDesign");
-	rp.getCountry().selectByVisibleText("Afghanistan");
-	rp.getselctctry().click();
-	rp.getdoby().selectByValue("1917");
-	rp.getdobm().selectByValue("February");
-	rp.getdobd().selectByValue("3");
-	rp.getFpassword().sendKeys("abcdef123");
-	rp.getConpassword().sendKeys("abcdef123");
-    rp.getPhoto().sendKeys("C:\\Users\\Public\\Pictures\\Sample Pictures\\Hydrangeas.jpg");
-	rp.getSubmit().click();
+		getlogin();
+		RegisterPage rp=new RegisterPage(driver);
+	//	WebElement h=rp.getheading();
+	//    String hd=h.getText();
+	//	Assert.assertEquals(hd,"hgff");
+		rp.getFirestname().sendKeys("xyz");
+		rp.getLastname().sendKeys("ddsdd");
+		rp.getAddress().sendKeys("hjkhf fjhkfh kfjahkjfha");
+		rp.getemail().sendKeys("testing4hobby@gmail.com");
+		rp.getPhone().sendKeys("9089889080");
+		rp.getRadiobtn().click();
+		rp.getCheckbox().click();
+		rp.getselectedoptn().selectByValue("Adobe InDesign");
+		rp.getCountry().selectByVisibleText("Afghanistan");
+		rp.getselctctry();
+		rp.getdoby().selectByValue("1917");
+		rp.getdobm().selectByValue("February");
+		rp.getdobd().selectByValue("3");
+		rp.getFpassword().sendKeys("abcdef123");
+		rp.getConpassword().sendKeys("abcdef123");
+	//    rp.getPhoto().sendKeys("C:\\Users\\Public\\Pictures\\Sample Pictures\\Hydrangeas.jpg");
+		rp.getSubmit().click();
 	}
-	@AfterTest
+    /*Method to close the driver.*/
+	@AfterClass
 	public void teardown()
 	{
 		driver.close();

@@ -9,27 +9,27 @@ package Academy;
  7.Close the browser.
  */
 import java.io.IOException;
-
-import org.junit.Before;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import Pageobjects.HomePage;
 import Pageobjects.SwitchtoPage;
 import resourses.base;
 
 public class TC_firstalert extends base
 {
-	@BeforeTest
+    /*Method for initialising driver*/
+	@BeforeClass
 	public void initalise() throws IOException
 	{
 		driver=initialiseDriver();
-		
 	}
+	/* Method for clicking ok button in alertbox*/
 	@Test
 	public void checkingfirstalertbtn() throws IOException, InterruptedException
 	{
@@ -42,7 +42,8 @@ public class TC_firstalert extends base
 		alt.accept();
 		
 	}
-	@AfterTest
+      /*Method for close the driver*/
+	@AfterClass
 	public void teardown()
 	{
 		driver.close();

@@ -11,22 +11,23 @@
 package Academy;
 
 import java.io.IOException;
-
 import org.openqa.selenium.Alert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import Pageobjects.SwitchtoPage;
 import resourses.base;
 
 public class TC_Thirdalert_withtextbox_cancel extends base{
-	@BeforeTest
+	/* Method for initialise driver.*/
+	@BeforeClass
 	public void initalise() throws IOException
 	{
 		driver=initialiseDriver();
-		
 	}
+    /*Method for click on thirdalert,and click on cancel in the alertbox*/
 	@Test
 	public void checking_thirdalertbtn_withcancel()throws IOException, InterruptedException
 	{
@@ -39,8 +40,8 @@ public class TC_Thirdalert_withtextbox_cancel extends base{
    	    Alert al=driver.switchTo().alert();
    	    al.dismiss();
 	}
-
-	@AfterTest
+    /*Method for close the browser*/
+	@AfterClass
 	public void teardown()
 	{
 		driver.close();
